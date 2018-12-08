@@ -3,14 +3,15 @@ This is just a function that will generate the first transaction of a blockcahin
 Found in the source of the Pura coin extracted it so that it would be easy to insert it in any altcoin based on Bitcoin.
 It is working regardless of the hashing algorithm you are using.
 
-```How to use it?
+<h1>How to use it?</h1>
 
 1- Copy the function at the top of you chainparams.cpp code.
 2- copy the call to the function after the call to CreateGenesisBlock, it should look like this
-[code]
+
+```
 genesis = CreateGenesisBlock(youttime, youtnonce, 0x1d00ffff, 1, 50 * COIN);
 MineGenesis(genesis, const uint256, consensus.powLimit, true) 
-[/code]
+```
 
 Compile and run ./src/qt/yourcoin-qt
 
@@ -20,6 +21,6 @@ Don't forget to comment the call to ManeGenesis once you have modified your chai
 
 The steps to create a basic altcoin with genesis is explained here: https://bitcointalk.org/index.php?topic=3345808.0
 
-```License
+<h1>License</h1>
 
 Distributed under the MIT software license. This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. This product includes cryptographic software written by Eric Young (eay@cryptsoft.com), and UPnP software written by Thomas Bernard.
