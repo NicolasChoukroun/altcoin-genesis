@@ -10,7 +10,7 @@ It is working regardless of the hashing algorithm you are using.
 
 ```
 genesis = CreateGenesisBlock(yourtime, yournonce, 0x1d00ffff, 1, 50 * COIN);
-MineGenesis(genesis, const uint256, consensus.powLimit, true) 
+MineGenesis(genesis, consensus.powLimit, true) 
 ```
 
 Compile and run ./src/qt/yourcoin-qt
