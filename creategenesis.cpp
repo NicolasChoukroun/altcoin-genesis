@@ -30,7 +30,7 @@ static void MineGenesis(CBlockHeader &genesisBlock, const uint256 &powLimit, boo
         }
         // If nothing found after trying for a while, print status
         if ((genesisBlock.nNonce & 0xffff) == 0)
-            printf("nonce %08X: hash = %s \n(target = %s)\n",
+            printf("nonce %08X: hash = %s \r",
                    genesisBlock.nNonce, newhash.ToString().c_str(),
                    hashTarget.ToString().c_str());
 
