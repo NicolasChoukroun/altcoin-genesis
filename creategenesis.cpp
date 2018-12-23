@@ -41,7 +41,7 @@ static void MineGenesis(CBlockHeader &genesisBlock, const uint256 &powLimit, boo
         }
         newhash = UintToArith256(genesisBlock.GetHash());
     }
-    printf("Genesis nTime = %u \n", genesisBlock.nTime);
+    printf("\nGenesis nTime = %u \n", genesisBlock.nTime);
     printf("Genesis nNonce = %u \n", genesisBlock.nNonce);
     printf("Genesis nBits: %08x\n", genesisBlock.nBits);
     printf("Genesis Hash = %s\n", newhash.ToString().c_str());
