@@ -9,7 +9,7 @@ It is working regardless of the hashing algorithm you are using.
 2- copy the call to the function after the call to CreateGenesisBlock, it should look like this
 
 ```
-genesis = CreateGenesisBlock(yourtime, yournonce, 0x1d00ffff, 1, 50 * COIN);
+genesis = CreateGenesisBlock(yourtime, yournonce, 0x1d00ffff, 536870912, 50 * COIN); // 536870912 = BIP101
 MineGenesis(genesis, consensus.powLimit, true) 
 ```
 
