@@ -5,7 +5,7 @@ It is working regardless of the hashing algorithm you are using.
 
 <h1>How to use it?</h1>
 
-1- Copy the function at the top of you chainparams.cpp code.
+1- Copy the function at the top of you chainparams.cpp code.<br>
 2- copy the call to the function after the call to CreateGenesisBlock, it should look like this
 
 ```
