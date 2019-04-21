@@ -1,5 +1,5 @@
 # altcoin-genesis
-This is just a function that will generate the first transaction of a blockcahin named Genesis
+This is just a function that will generate the first transaction of a blockchain: the Genesis.
 Found in the source of the Pura coin extracted it so that it would be easy to insert it in any altcoin based on Bitcoin.
 It is working regardless of the hashing algorithm you are using.
 
