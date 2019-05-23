@@ -12,6 +12,8 @@ It is working regardless of the hashing algorithm you are using.
 genesis = CreateGenesisBlock(yourtime, yournonce, 0x1d00ffff, 536870912, 50 * COIN); // 536870912 = BIP101
 MineGenesis(genesis, consensus.powLimit, true) 
 ```
+Yourtime is the current Unix Timestamp
+Youronce is usually 0. That's the first value to be incremented.
 
 Compile and run ./src/qt/yourcoin-qt
 
